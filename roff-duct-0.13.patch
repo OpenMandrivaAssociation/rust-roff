@@ -1,0 +1,12 @@
+diff -up roff-0.1.0/tests/demo.rs.orig roff-0.1.0/tests/demo.rs
+--- roff-0.1.0/tests/demo.rs.orig	2018-04-18 23:09:27.000000000 +0200
++++ roff-0.1.0/tests/demo.rs	2019-09-27 12:45:29.912714021 +0200
+@@ -4,7 +4,7 @@ extern crate duct;
+ 
+ fn roff_to_ascii(input: &str) -> String {
+     duct::cmd("troff", &["-a", "-mman"])
+-        .input(input)
++        .stdin_bytes(input)
+         .stdout_capture()
+         .read()
+         .unwrap()

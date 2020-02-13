@@ -1,0 +1,12 @@
+--- roff-0.1.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ roff-0.1.0/Cargo.toml	2019-07-07T14:28:50.760316+00:00
+@@ -23,7 +23,7 @@
+ 
+ [dependencies]
+ [dev-dependencies.duct]
+-version = "0.10.0"
++version = "0.13.0"
+ 
+ [dev-dependencies.pretty_assertions]
+-version = "0.5.1"
++version = "0.6.1"
